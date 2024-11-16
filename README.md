@@ -1,5 +1,8 @@
 # Assignment3
 Kaitlyn Hicks - 49137588
+
+Roxana Dicusara - 49287621
+
 Output:
 Enter product IDs to search for, or type 'exit' to quit.
 Enter product ID: 5912d6223d9d7ec9aa5c4bb3b583de3e
@@ -10,4 +13,11 @@ Enter product ID: e086ff1f756e3e72dfd5295fd07c2310
 Product ID: e086ff1f756e3e72dfd5295fd07c2310, Name: I Love RC Boats Remote Radio Control Hobby T-Shirt, Category: Toys & Games | Hobbies | Remote & App Controlled Vehicles & Parts | Remote & App Controlled Vehicles, Price: $$15.95 
 Enter product ID: exit
 Exiting the program.
+
+Inserting new product:
+Product ID: 1111, Name: New Product, Category: Electronics, Price: $$49.99
+Inserted
+
+Inserting product:
+Product ID: 1111, Name: New Product, Category: Electronics, Price: $$49.99
 Error: Product with ID 1111 already exists.
