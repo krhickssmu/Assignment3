@@ -1,6 +1,7 @@
 public class Main {
         private RedBlackTree productTree = new RedBlackTree();
 
+        //reading products from csv file and separting into categories
         public void loadProducts(String filename) {
             In in = new In(filename);
             while (!in.isEmpty()) {
@@ -22,10 +23,11 @@ public class Main {
 
         }
 
+        //search function to find products in productTree
         public void searchProduct(String productID) {
             AmazonItem product = productTree.search(productID);
             if (product != null) {
-                System.out.println(product);
+                System.out.println(product);        //outputs product
             }
         }
 
@@ -37,16 +39,22 @@ public class Main {
 
             while (true) {
                 StdOut.print("Enter product ID: ");
-                String userInput = StdIn.readLine().trim();
+                String userInput = StdIn.readLine().trim();        //reads user input which is a product ID
 
-                if ("exit".equalsIgnoreCase(userInput)) {
+                if ("exit".equalsIgnoreCase(userInput)) {                //search exits if "exit" is typed
                     StdOut.println("Exiting the program.");
                     break;
                 }
                 manager.searchProduct(userInput);
             }
+                //inserting new product (1st time new, 2nd time duplicate case)
+            System.out.println("\nInserting new product:");
             AmazonItem newProduct = new AmazonItem("1111", "New Product", "Electronics", "$49.99");
+            System.out.println(newProduct);
             manager.productTree.insert(newProduct);
+            System.out.println("Inserted");
+            System.out.println("\nInserting product:");
+            System.out.println(newProduct);
             manager.productTree.insert(newProduct);
         }
     }
