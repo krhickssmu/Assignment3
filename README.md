@@ -11,6 +11,7 @@ Enter product ID: daa78f7b015d3e5d344aa6ece3304363
 Product ID: daa78f7b015d3e5d344aa6ece3304363, Name: "Wild Republic Lion Baby Plush, Category:  Stuffed Animal, Price: $ Plush Toy
 Enter product ID: e086ff1f756e3e72dfd5295fd07c2310
 Product ID: e086ff1f756e3e72dfd5295fd07c2310, Name: I Love RC Boats Remote Radio Control Hobby T-Shirt, Category: Toys & Games | Hobbies | Remote & App Controlled Vehicles & Parts | Remote & App Controlled Vehicles, Price: $$15.95 
+
 Enter product ID: exit
 
 Exiting the program.
@@ -46,4 +47,5 @@ Performance with large dataset:
 This program is able to read all the inputs from the file and categorize each section of the product. The insertion of the products should typically be 1.01 lg n in the average case. When the user inputs more id's for search, the program consitently outputs the correct products with similar timing. 
 
 Maintaining Balance:
+
 Keeping balance in the tree helps performance because the height of the tree is the same throughout all child nodes and it provides consistent timing throughout the tree (O lg n). The red black tree also provides a consistent path from the root to the child nodes, and if any rebalancing has to occur, the tree adjusts to to where the height is the same throughout the whole tree. By maintaining balance, it keeps the logarithmic time and keeps the performance consistent.
