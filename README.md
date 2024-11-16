@@ -31,15 +31,18 @@ Error: Product with ID 1111 already exists.
 # Performance and Scalability Considerations - Time Complexity, Performance with large data set, Maintaining balance 
 
 Insertion:
+
 When inserting a new element in the Red-Black tree, the timing of the average case for insertion is 1.01 lg N or 2 lg n for the guaranteed case. After searching between elements (parent and child nodes), the options for where the element could be inserted is cut in half. Part of the tree is excluded and that reduces the time as the place for insertion is reached. After insertion, the tree may have to rebalance by rotating and changing link colors, and the timing of these will also be O lg n as they go up to the root (increase logarithmically, O is a placeholder).
 *Rotations have a constant time, but as they go up and reach the root, they increase logarithemically (still ends up being O lg n).
 
 Search:
+
 Similar to insertion, when going through the tree, part of the elements will be excluded in the search. The timing will take around 1.01 lg n for the average case of searches.
 
-The overall time complexity would be O lg n.
+The overall time complexity for both insertion and search would be O lg n.
 
 Performance with large dataset:
+
 This program is able to read all the inputs from the file and categorize each section of the product. The insertion of the products should typically be 1.01 lg n in the average case. When the user inputs more id's for search, the program consitently outputs the correct products with similar timing. 
 
 Maintaining Balance:
