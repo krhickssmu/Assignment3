@@ -15,6 +15,7 @@ public class RedBlackTree {
 
     private Node root;
 
+    //insertion into tree
     public void insert(AmazonItem product) {
         root = insert(root, product);
         root.color = BLACK;
@@ -38,6 +39,7 @@ public class RedBlackTree {
         return h;
     }
 
+    //search item in tree
     public AmazonItem search(String productID) {
         Node node = search(root, productID);
         if (node != null) return node.product;
